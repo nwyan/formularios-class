@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap" rel="stylesheet"/>
+
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>AVALIE A SUA MENTORIA</h1>
+            <p>Chegou a hora de avaliar a seu mentor. Bora lá?</p>
+            <img src="image/card.png" alt="Card de avaliação de estrelas">
+        </header>
+
+        <form id="my-form">
+            <fieldset>
+                <legend class="header-form">Informações pessoais</legend>
+                <div class="all-form">
+                    <div class="fieldset-wrapper">
+                        <div class="col-2">
+                            <div class="input-wrapper">
+                                <label for="event-name">Nome</label>
+                                <input type="text" id="event-name">
+                            </div>
+        
+                            <div class="input-wrapper">
+                                <label for="event-lastname">Sobrenome</label>
+                                <input type="text" id="event-lastname">
+                            </div>
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <label for="event-email">Email <span>(digite um email válido)</span></label>
+                            <input type="email" id="event-email">
+                        </div>
+                    </div>
+    
+                    <h2>INFORMAÇÕES DO MENTOR</h2>
+    
+                    <div class="line"></div>
+    
+                    <div class="fieldset-wrapper">
+                        <div class="input-wrapper">
+                            <label for="event-select">Selecione quem foi o seu mento</label>
+                            <select name="cars" id="leader">
+                                <option value="zero"></option>
+                                <option value="Yan">Yan</option>
+                                <option value="Diego">Diego</option>
+                                <option value="Luana">Luana</option>
+                              </select>
+                        </div>
+    
+                        <div class="input-wrapper">
+                            <label for="event-feedback">Feedback sobre o mentor</label>
+                            <textarea id="story" name="story" rows="5" cols="33">
+                            </textarea>
+                        </div>
+                        
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="event-doubt" />
+                            <label for="event-doubt">Todas as minhas dúvidas foram esclareidas durante a mentoria.</label>
+                        </div>
+                    </div>
+
+                    <h2>AGENDANDO PRÓXIMA MENTORIA</h2>
+
+                    <div class="line"></div>
+
+                    <div class="fieldset-wrapper">
+                        <div class="col-2">
+                            <div class="input-wrapper">
+                                <label for="event-date">Data <span>(DD/MM/AAAA)</span></label>
+                                <input type="date" id="event-date">
+                            </div>
+                            
+                            <div class="input-wrapper-hour">
+                                <div class="input-hour">
+                                    <label for="event-das">Das</label>
+                                    <input type="text" id="event-das">
+                                </div>
+    
+                                <div class="input-hour">
+                                    <label for="event-ate">Até</label>
+                                    <input type="text" id="event-ate">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="form-button">Salvar</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
